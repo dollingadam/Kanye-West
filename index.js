@@ -8,3 +8,8 @@ fetch('https://api.kanye.rest/')
 document.querySelector("#quotes").innerHTML = data.quote;
 })}
 random()
+
+let btn = document.querySelector("#getRandom");
+btn.addEventListener('click', () => {
+    random()
+})
